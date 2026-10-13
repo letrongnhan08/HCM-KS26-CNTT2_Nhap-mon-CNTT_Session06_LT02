@@ -1,0 +1,9 @@
+Bài 2 : Xử lý sự cố Website từ Access Log
+Phần 1: Phân tích
+Nhầm lẫn của An:
+An mắc lỗi nhầm lẫn cơ bản giữa việc tìm kiếm tên tệp/thư mục và tìm kiếm nội dung bên trong tệp.
+Sự khác biệt của Get-ChildItem và Select-String:
+Get-ChildItem là dùng để liệt kê các tệp và thư mục trong hệ thống
+Select-String lệnh chuẩn trong PowerShell dùng để tìm kiếm chuỗi văn bản bên trong nội dung các tệp
+Phần 2:viết lại lệnh
+Select-String -Path "access.log" -Pattern "error"
